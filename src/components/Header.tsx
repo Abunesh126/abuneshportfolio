@@ -33,7 +33,20 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
-          <a href="#hero" className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+          <a
+            href="#hero"
+            className="text-2xl font-bold text-blue-600 dark:text-blue-400 focus:outline-none cursor-pointer"
+            onClick={e => {
+              e.preventDefault();
+              const hero = document.getElementById("hero");
+              if (hero) {
+                hero.scrollIntoView({ behavior: "smooth" });
+              } else {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
+            aria-label="Go to hero section"
+          >
             Abunesh RP
           </a>
 

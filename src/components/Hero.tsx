@@ -178,7 +178,7 @@ const Hero: React.FC<HeroProps> = ({
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 dark:bg-white/10 backdrop-blur-md rounded-full border border-white/30 dark:border-white/20 shadow-lg">
                   <Sparkles className="w-4 h-4 text-amber-500" />
                   <span className="text-sm font-medium text-gray-700 dark:text-gray-200">
-                    Available for opportunities
+                  <b>Eager to Work with Innovative Teams </b>  
                   </span>
                 </div>
               </motion.div>
